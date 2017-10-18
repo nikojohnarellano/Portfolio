@@ -28,31 +28,7 @@
 }
 
 body {
-    background-color: #1b1c1d;
-}
-
-.HomeSegment {
-    width : 100%;
-}
-
-.FlipCard-container {
-    border : 1px;
-    border-radius : 5px;
-    border-color: white;
-    border-style: solid;
-    width: 75%;
-}
-
-.FlipCard-grid {
-    padding : 10px;
-}
-
-.react-card-front {
-    position: relative;
-}
-
-.react-card-back {
-    position : relative;
+    background-color: black;
 }
 
 /* Flip CSS */
