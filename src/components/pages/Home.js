@@ -9,19 +9,23 @@ import {
     Container,
     Header,
     Segment,
+    Button,
+    Icon
 } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
 
     render() {
 
+        console.log(this.props)
+
         return (
 
-            <div>
+            <div className="content-custom">
                 <Segment
                     textAlign='center'
-                    className='HomeSegment fadeInUp'
-                    style={{height: window.innerHeight - 300}}
+                    className='fadeInUp'
                     vertical
                 >
                     <Container fluid style={{ padding : "3em 0em", width:"50%"}}>
@@ -37,6 +41,14 @@ export default class Home extends Component {
                             inverted
                             style={{fontSize: '1.7em', fontWeight: 'normal'}}
                         />
+
+                        <Link to="/Portfolio">
+                        <Button color="violet" size="large" inverted onClick={() => {this.props.setActiveItem("Portfolio")}}>
+                            <Button.Content visible>
+                                    <span style={{ color: "white" }}>See My Works</span>
+                            </Button.Content>
+                        </Button>
+                        </Link>
                     </Container>
                 </Segment>
             </div>

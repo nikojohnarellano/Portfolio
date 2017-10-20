@@ -26,7 +26,7 @@ export default class PortfolioItem extends Component {
                                     centered
                                     spaced
                                     style={{height:item.type === 'web' ? "500px" : "370px",
-                                    width: item.type === 'web' ? "500px" : "210px" , margin: "10px"}}/>
+                                    width: item.type === 'web' ? "520px" : "210px" , margin: "10px"}}/>
                                 {
                                     item.images[1] &&
                                     <Image
@@ -46,9 +46,23 @@ export default class PortfolioItem extends Component {
                             <p style={{ fontSize: '1.33em', color: "white"  }}>
                                 { item.description }
                             </p>
+                            {
+
+                                item.link.downloads ?
+                                    (
+                                        <Image.Group size='small'>
+                                            <Image bordered src={item.link.downloads[0].image} href={item.link.downloads[0].link} />
+                                            <Image bordered src={item.link.downloads[1].image} href={item.link.downloads[1].link} />
+                                        </Image.Group>
+                                    )
+                                 :
+                                    <p style={{ fontSize: '1.33em', color: "white"  }}>
+                                        {item.link.title} : <a href={item.link.link}>{item.link.link}</a>
+                                    </p>
+
+                            }
                             <Header as='h5' style={{ fontSize: '1.3em', color: "white"  }}>Tech Stack: </Header>
-                            <p style={{ fontSize: '1.33em', color: "white"  }}>
-                                {/* item.techStack*/ }
+                            <div style={{ fontSize: '1.33em', color: "white"  }}>
                                 {
                                     item.techStack.map(techStack =>
                                         <div>
@@ -57,7 +71,7 @@ export default class PortfolioItem extends Component {
                                         </div>
                                     )
                                 }
-                            </p>
+                            </div>
                         </Grid.Column>
 
                     </Grid.Row>

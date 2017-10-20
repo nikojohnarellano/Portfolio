@@ -19,13 +19,13 @@ export default class Footer extends Component {
     render() {
 
         return (
-            <div>
+            <div className="footer-custom">
                 <Segment vertical>
                     <Container>
                         <Grid divided inverted stackable>
                             <Grid.Row>
-                                <Grid.Column width={8}>
-                                    <div style={{ float : "right" }}>
+                                <Grid.Column textAlign="center" width={8}>
+                                    <div>
                                         <Header
                                             as="h2"
                                             content="© 2017 Niko Arellano"
@@ -33,22 +33,26 @@ export default class Footer extends Component {
                                             />
                                     </div>
                                 </Grid.Column>
-                                <Grid.Column width={8}>
+                                <Grid.Column textAlign="center" width={8}>
                                     <List horizontal link inverted>
-                                        <List.Item as='a'>
-                                            <div style={{fontSize: '1.5em', fontWeight: 'normal', color: "white", textDecoration:"underline",}}>
+                                        <List.Item>
+                                            <a href="https://github.com/nikoootine"
+                                                style={{fontSize: '1.5em', fontWeight: 'normal', color: "white", textDecoration:"underline",}}>
                                                 Github
-                                            </div>
+                                            </a>
                                         </List.Item>
-                                        <List.Item as='a'>
-                                            <div style={{fontSize: '1.5em', fontWeight: 'normal', color: "white", textDecoration:"underline",}}>
+                                        <List.Item>
+                                            <a href="https://www.linkedin.com/in/niko-john-arellano-48b181102/"
+                                             style={{fontSize: '1.5em', fontWeight: 'normal', color: "white", textDecoration:"underline",}}>
                                             LinkedIn
-                                            </div>
+                                            </a>
                                         </List.Item>
-                                        <List.Item as='a'>
-                                            <div style={{fontSize: '1.5em', fontWeight: 'normal', textDecoration:"underline", color: "white"}}>
+                                        <List.Item>
+                                            <a
+                                            href="https://www.facebook.com/niko.arellano1"
+                                            style={{fontSize: '1.5em', fontWeight: 'normal', textDecoration:"underline", color: "white"}}>
                                                 Facebook
-                                            </div>
+                                            </a>
                                         </List.Item>
                                     </List>
                                 </Grid.Column>

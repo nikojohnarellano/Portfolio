@@ -8,119 +8,177 @@ import {
     Grid,
     Header,
     Image,
+    Progress,
     Segment,
+    Tab
 } from 'semantic-ui-react'
 
+
+const Main = () => (
+    <Grid as={Segment} inverted className="fadeIn">
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Java :"/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={85} inverted color='orange' size="large" progress/>
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="C# :"/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={90} inverted color='blue' progress/>
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="C++ :"/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={75} inverted color='green' progress/>
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="PHP: "/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={85} inverted color='violet' progress/>
+            </Grid.Column>
+        </Grid.Row><Grid.Row>
+        <Grid.Column width={4}>
+            <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Javascript: "/>
+        </Grid.Column>
+        <Grid.Column width={12}>
+            <Progress percent={85} inverted color='red' progress/>
+        </Grid.Column>
+    </Grid.Row>
+    </Grid>
+);
+
+const FrontEnd = () => (
+    <Grid as={Segment} inverted className="fadeIn">
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="React: "/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={90} inverted color='blue' size="large" />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="jQuery: "/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={85} inverted color='orange' />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="D3js: "/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={85} inverted color='green' />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Angular2: "/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={75} inverted color='red' />
+            </Grid.Column>
+        </Grid.Row><Grid.Row>
+    </Grid.Row>
+    </Grid>
+);
+
+const BackEnd = () => (
+    <Grid as={Segment} inverted className="fadeIn">
+        <Grid.Row>
+            <Grid.Column width={4} verticalAlign="middle">
+                <div style={{ textAlign: "center" }}>
+                    <Image size="tiny" src='/assets/skills/csharp.png' avatar />
+                    <span style={{ textAlign : "center", color: "white", fontSize:"15"}}>ASP.Net:</span>
+                </div>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress style={{ marginTop : "5%" }} percent={90} inverted color='blue' size="large" />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4} verticalAlign="middle">
+                <div style={{ textAlign: "center" }}>
+                    <Image size="tiny" src='/assets/skills/php.png' avatar />
+                    <span style={{ textAlign : "center", color: "violet", fontSize:"15"}}>Laravel:</span>
+                </div>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={90} inverted color='orange' />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4} verticalAlign="middle">
+                <div style={{ textAlign: "center" }}>
+                    <Image size="tiny" src='/assets/skills/express.png' avatar />
+                    <span style={{ textAlign : "center", color: "white", fontSize:"15"}}>Express:</span>
+                </div>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress style={{ margin: "auto", textAlign: "center" }} percent={75} inverted color='green' />
+            </Grid.Column>
+        </Grid.Row>
+    </Grid>
+);
+
+const Mobile = () => (
+    <Grid as={Segment} inverted className="fadeIn">
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="React Native :"/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={90} inverted color='red' size="large" />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Swift: "/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={80} inverted color='orange' />
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column width={4}>
+                <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Java in Android Studio: "/>
+            </Grid.Column>
+            <Grid.Column width={12}>
+                <Progress percent={75} inverted color='yellow' />
+            </Grid.Column>
+        </Grid.Row>
+    </Grid>
+);
+
+
+const panes = [
+    { menuItem: 'Main', render: () => <Main/>},
+    { menuItem: 'Front End', render: () => <FrontEnd/> },
+    { menuItem: 'Back End', render: () => <BackEnd/>},
+    { menuItem: 'Mobile', render: () => <Mobile/>},
+];
+
 export default class Skills extends Component {
+
     render() {
         return (
-            <div>
-                <Segment style={{padding: '2em 0em'}} vertical>
-                    <Container textAlign="center" text>
-                        <Header as='h2' style={{fontSize: '2em'}}>
-                            Skills
-                        </Header>
-                        <Header as="h3">
-                            <Header.Content>
-                                Main Development Languages
-                                <Image.Group>
-                                    <Image shape="circular"
-                                           label="C#"
-                                           size="tiny"
-                                           src="./assets/skills/csharp.png"/>
-                                    <Image shape="circular"
-                                           label="java"
-                                           size="tiny"
-                                           src="./assets/skills/java.png"/>
-                                    <Image shape="circular"
-                                           label="javascript"
-                                           size="tiny"
-                                           src="./assets/skills/javascript.png"/>
-                                    <Image shape="circular"
-                                           label="php"
-                                           size="tiny"
-                                           src="./assets/skills/php.png"/>
-                                </Image.Group>
-                            </Header.Content>
-                        </Header>
-                        <Divider
-                            as='h4'
-                            className='header'
-                            horizontal
-                            style={{textTransform: 'uppercase'}}
-                        >
-                        </Divider>
-
-                        <Grid>
-                            <Grid.Row columns={3}>
-                                <Grid.Column>
-                                    <Header as="h3">
-                                        <Header.Content>
-                                            Main Development Languages
-                                            <Segment circular
-                                                     inverted>
-                                                <Image fluid src="./assets/skills/reactjs.png"/>
-                                            </Segment>
-                                            <Segment circular
-                                                     inverted>
-                                                <Image fluid
-                                                       src="./assets/skills/d3js.png"/>
-                                            </Segment>
-                                            <Segment circular
-                                                     inverted>
-                                                <Image fluid
-                                                       src="./assets/skills/jquery.png"/>
-                                            </Segment>
-                                        </Header.Content>
-                                    </Header>
-                                </Grid.Column>
-                                <Grid.Column>
-                                    <Header as="h3">
-                                        <Header.Content>
-                                            Main Development Languages
-                                            <Image.Group>
-                                                <Image shape="circular"
-                                                       label="C#"
-                                                       size="tiny"
-                                                       src="./assets/skills/reactjs.png"/>
-                                                <Image shape="circular"
-                                                       label="java"
-                                                       size="tiny"
-                                                       src="./assets/skills/d3js.png"/>
-                                                <Image shape="circular"
-                                                       label="javascript"
-                                                       size="tiny"
-                                                       src="./assets/skills/jquery.png"/>
-                                            </Image.Group>
-                                        </Header.Content>
-                                    </Header>
-                                </Grid.Column>
-                                <Grid.Column>
-                                    <Header as="h3">
-                                        <Header.Content>
-                                            Main Development Languages
-                                            <Image.Group>
-                                                <Image shape="circular"
-                                                       label="C#"
-                                                       size="tiny"
-                                                       src="./assets/skills/reactjs.png"/>
-                                                <Image shape="circular"
-                                                       label="java"
-                                                       size="tiny"
-                                                       src="./assets/skills/d3js.png"/>
-                                                <Image shape="circular"
-                                                       label="javascript"
-                                                       size="tiny"
-                                                       src="./assets/skills/jquery.png"/>
-                                            </Image.Group>
-                                        </Header.Content>
-                                    </Header>
-                                </Grid.Column>
-                            </Grid.Row>
-                        </Grid>
-                    </Container>
-                </Segment>
-                <Footer/>
+            <div className="fadeInUp content-custom" style={{ height: window.innerHeight-300 }}>
+                <Tab
+                    menu={{ widths:4, pointing : true, inverted :true }}
+                    style={{ width : "75%", margin: "auto", }} panes={panes} />
             </div>
         )
     }

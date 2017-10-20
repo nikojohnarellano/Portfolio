@@ -27,8 +27,35 @@
   to { transform: rotate(360deg); }
 }
 
-body {
+html, body {
+    height: 100%;
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
-/* Flip CSS */
+.wrapper-custom {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
+
+.footer-custom {
+    width:100%;
+    height:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.selected-item {
+    border-bottom : 2px;
+    border-bottom-style : solid;
+    border-color: white;
+}
+
+.active {
+    color : black;
+}
