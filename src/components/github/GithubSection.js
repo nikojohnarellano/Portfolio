@@ -2,10 +2,8 @@
  * Created by nikoarellano on 2017-10-03.
  */
 import React, {Component} from 'react';
-import { Card, Image, Icon, Container, Segment, Header, Loader} from 'semantic-ui-react'
+import {Segment, Header, Loader} from 'semantic-ui-react'
 import GithubCalendar from 'github-calendar'
-import PropTypes from 'prop-types'
-import _ from 'lodash'
 
 class GithubSection extends Component {
 

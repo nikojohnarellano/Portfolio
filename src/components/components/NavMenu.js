@@ -5,11 +5,8 @@
  * Created by nikoarellano on 2017-10-03.
  */
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
 import {
-    Header,
     Container,
-    Menu,
 } from 'semantic-ui-react'
 import {
     Navbar,
@@ -88,7 +85,8 @@ export default class NavMenu extends Component {
                                 <LinkContainer to="/Resume">
                                     <NavItem
                                         className={activeItem === 'Resume' ? "selected-item" : null}
-                                        onClick={() => this.props.setActiveItem("Resume")}>
+                                        onClick={() => this.props.setActiveItem("Resume")}
+                                        >
                                         <span>Resume</span>
                                     </NavItem>
                                 </LinkContainer>

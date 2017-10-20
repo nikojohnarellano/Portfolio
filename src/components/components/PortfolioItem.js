@@ -2,7 +2,6 @@
  * Created by nikoarellano on 2017-10-17.
  */
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import {
     Grid,
     Header,
@@ -64,8 +63,8 @@ export default class PortfolioItem extends Component {
                             <Header as='h5' style={{ fontSize: '1.3em', color: "white"  }}>Tech Stack: </Header>
                             <div style={{ fontSize: '1.33em', color: "white"  }}>
                                 {
-                                    item.techStack.map(techStack =>
-                                        <div>
+                                    item.techStack.map((techStack,index) =>
+                                        <div key={index}>
                                         <Image src={ techStack.icon } avatar />
                                         <span>{ techStack.name }</span>
                                         </div>

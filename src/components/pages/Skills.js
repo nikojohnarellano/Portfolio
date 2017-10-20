@@ -3,11 +3,8 @@
  */
 import React, {Component} from 'react'
 import {
-    Container,
-    Divider,
     Grid,
     Header,
-    Image,
     Progress,
     Segment,
     Tab
@@ -163,7 +160,7 @@ const BackEnd = () => (
                     as='h4'
                     content='Beginner'
                     inverted
-                    style={{fontSize: '1.5em', fontWeight: 'bold', textAlign: 'center'}}
+                    style={{fontWeight: 'bold', textAlign: 'center'}}
                 />
             </Grid.Column>
             <Grid.Column width={4}>
@@ -171,7 +168,7 @@ const BackEnd = () => (
                     as='h4'
                     content='Intermediate'
                     inverted
-                    style={{fontSize: '1.5em', fontWeight: 'bold', textAlign: 'center'}}
+                    style={{ fontWeight: 'bold', textAlign: 'center'}}
                 />
             </Grid.Column>
             <Grid.Column width={4}>
@@ -179,7 +176,7 @@ const BackEnd = () => (
                     as='h4'
                     content='Advanced'
                     inverted
-                    style={{fontSize: '1.5em', fontWeight: 'bold', textAlign: 'center'}}
+                    style={{fontWeight: 'bold', textAlign: 'center'}}
                 />
             </Grid.Column>
         </Grid.Row>

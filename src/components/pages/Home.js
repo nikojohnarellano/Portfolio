@@ -10,15 +10,12 @@ import {
     Header,
     Segment,
     Button,
-    Icon
 } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
 
     render() {
-
-        console.log(this.props)
 
         return (
 

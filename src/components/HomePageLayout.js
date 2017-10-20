@@ -6,10 +6,9 @@ import Portfolio from "./pages/Portfolio";
 import Home from  "./pages/Home"
 import NavMenu from "./components/NavMenu"
 import Footer from "./components/Footer"
-import {Route, Redirect} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import Skills from "./pages/Skills"
-import {Transition, Segment} from 'semantic-ui-react'
-import TransitionGroup from 'react-transition-group/TransitionGroup'
+import Resume from "./pages/Resume"
 
 export default class HomepageLayout extends Component {
 
@@ -36,6 +35,7 @@ export default class HomepageLayout extends Component {
                 <Route exact path="/" component={() => <Home setActiveItem={this.setActiveItem}/>}/>
                 <Route path="/Portfolio" component={Portfolio}/>
                 <Route path="/Skills" component={Skills}/>
+                <Route path="/Resume" component={Resume}/>
                 <Footer/>
             </div>
         )

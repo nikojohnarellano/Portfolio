@@ -2,12 +2,6 @@
  * Created by nikoarellano on 2017-10-03.
  */
 import React, {Component} from 'react'
-import {
-    Grid,
-    Header,
-    Image,
-    Segment,
-} from 'semantic-ui-react'
 import PortfolioItem from "../components/PortfolioItem";
 
 const items = [
@@ -125,8 +119,8 @@ export default class Portfolio extends Component {
         return (
             <div className="fadeInUp content-custom">
                 {
-                    items.map(item =>
-                        <PortfolioItem item={item} />
+                    items.map((item, index) =>
+                        <PortfolioItem item={item} key={index} />
                     )
                 }
             </div>

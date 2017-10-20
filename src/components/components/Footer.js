@@ -11,7 +11,6 @@ import {
     Header,
     List,
     Segment,
-    Icon
 } from 'semantic-ui-react'
 
 export default class Footer extends Component {
