@@ -53,7 +53,7 @@ export default class NavMenu extends Component {
                         </Menu>*/
                     }
 
-                    <Navbar style={{ background : "transparent", border: "none",  borderTop : 0 }}
+                    <Navbar style={{ background : "transparent", border: "none",  borderTop : 0, fontSize : "1.3em" }}
                      fluid collapseOnSelect>
                         <Navbar.Header>
                             <Navbar.Brand>
