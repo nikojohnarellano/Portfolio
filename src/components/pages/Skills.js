@@ -299,7 +299,7 @@ export default class Skills extends Component {
             <div className="fadeInUp content-custom">
                 <Tab
                     menu={{ widths:4, pointing : true, inverted :true }}
-                    style={{ width : "75%", margin: "auto", }} panes={panes} />
+                    style={{ width : "1000px", margin: "auto", }} panes={panes} />
             </div>
         )
     }
