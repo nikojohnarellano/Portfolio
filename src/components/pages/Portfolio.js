@@ -93,7 +93,7 @@ const items = [
         ],
         images : [
             "./assets/myecash/myecash1_iphone7plusgold_portrait.png",
-            "./assets/myecash/myecash1_iphone7plusgold_portrait.png"
+            "./assets/myecash/myecash2_iphone7plusgold_portrait.png"
         ]
     },
     {
