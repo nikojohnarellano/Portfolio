@@ -23,7 +23,7 @@ export default class Resume extends Component {
                     vertical
                     >
                     <Container fluid>
-                        <embed src="./assets/files/Arellano_Niko_Resume.pdf" width="100%" height="2100px" />
+                        <embed src="./assets/files/Arellano_Niko_Resume_2018.pdf" width="100%" height="2100px" />
                     </Container>
                 </Segment>
             </div>

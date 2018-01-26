@@ -27,7 +27,7 @@ export default class Footer extends Component {
                                     <div>
                                         <Header
                                             as="h2"
-                                            content="© 2017 Niko Arellano"
+                                            content="© 2018 Niko Arellano"
                                             style={{fontSize: '1.5em', fontWeight: 'normal', color: "white"}}
                                             />
                                     </div>

@@ -25,6 +25,39 @@ const items = [
         ]
     },
     {
+        title : "Potluck App",
+        description: "A web app for organizing potluck events. Features creation of the event, inviting guests and setting the pledge items.",
+        type: "web",
+        techStack : [
+            { name : "ReactJs", icon : "./assets/skills/reactjs.png" },
+            { name : ".Net Core", icon : "./assets/skills/csharp.png" }
+        ],
+        link : {
+            title: "Site:",
+            link: "https://potluck.preventanyl.com/"
+        },
+        images : [
+            "./assets/potluck-web/potluck-web.png",
+        ]
+    },
+    {
+        title : "Potluck Mobile",
+        description: "A mobile client for the web app Potluck in which users can access the potluck events they are invited. This app also features pledging, in which users have a chance to pledge which items they want to bring to the potluck event.",
+        type: "mobile",
+        techStack : [
+            { name : "React Native (JS)", icon : "./assets/skills/reactjs.png" },
+            { name : "Expo", icon : "./assets/skills/expo.png" }
+        ],
+        link : {
+            title: "Use it through Expo",
+            link: "https://expo.io/@mobilepotluck/potluck-project"
+        },
+        images : [
+            "./assets/potluck-mobile/potluck_mobile_1.png",
+            "./assets/potluck-mobile/potluck_mobile_2.png"
+        ]
+    },
+    {
         title : "Collab",
         description : "A web application where students can share study notes and tips to their fellow students",
         techStack : [

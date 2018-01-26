@@ -46,7 +46,7 @@ const Main = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="C# :"/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress percent={70} inverted color='blue' size="large"/>
+                <Progress percent={85} inverted color='blue' size="large"/>
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -54,7 +54,7 @@ const Main = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Java :"/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress percent={70} inverted color='orange' size="large"/>
+                <Progress percent={50} inverted color='orange' size="large"/>
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -62,7 +62,7 @@ const Main = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Javascript: "/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress percent={70} inverted color='red' size="large"/>
+                <Progress percent={85} inverted color='red' size="large"/>
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -119,7 +119,7 @@ const FrontEnd = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="React: "/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress percent={70}  inverted color='blue' size="large" />
+                <Progress percent={85}  inverted color='blue' size="large" />
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -127,7 +127,7 @@ const FrontEnd = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="jQuery: "/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress percent={65} size="large" inverted color='orange' />
+                <Progress percent={85} size="large" inverted color='orange' />
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -143,7 +143,7 @@ const FrontEnd = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Angular2: "/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress percent={40} size="large" inverted color='red' />
+                <Progress percent={50} size="large" inverted color='red' />
             </Grid.Column>
         </Grid.Row><Grid.Row>
     </Grid.Row>
@@ -190,7 +190,7 @@ const BackEnd = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="ASP.Net C#: "/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress style={{ marginTop : "4%" }} percent={70} inverted color='blue' size="large" />
+                <Progress style={{ marginTop : "4%" }} percent={80} inverted color='blue' size="large" />
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -204,7 +204,7 @@ const BackEnd = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Laravel PHP: "/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress style={{ marginTop : "4%" }} percent={65} inverted color='orange' size="large" />
+                <Progress style={{ marginTop : "4%" }} percent={50} inverted color='orange' size="large" />
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -218,7 +218,7 @@ const BackEnd = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="Express Nodejs: "/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress style={{ marginTop : "4%" }} size="large" percent={40} inverted color='green' />
+                <Progress style={{ marginTop : "4%" }} size="large" percent={50} inverted color='green' />
             </Grid.Column>
         </Grid.Row>
     </Grid>
@@ -261,7 +261,7 @@ const Mobile = () => (
                 <Header as="h2" style={{ textAlign : "center", color: "white"}} content="React Native :"/>
             </Grid.Column>
             <Grid.Column width={12}>
-                <Progress percent={68} inverted color='red' size="large" />
+                <Progress percent={85} inverted color='red' size="large" />
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
