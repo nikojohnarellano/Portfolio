@@ -58,6 +58,20 @@ const items = [
         ]
     },
     {
+        title : "Connect Conference",
+        description : "A mobile app owned by Connect Biomed that helps easily assign teams, collect scientific & competitive intelligence, and generate real-time meeting reports during conferences.",
+        type : "mobile",
+        techStack : [
+            { name : "React Native (JS)", icon : "./assets/skills/reactjs.png" },
+            { name : "Expo", icon : "./assets/skills/expo.png" }
+        ],
+        link : {},
+        images : [
+            "./assets/connect/connect1_iphone8gold_portrait.png",
+            "./assets/connect/connect2_iphone8gold_portrait.png"
+        ]
+    },
+    {
         title : "Collab",
         description : "A web application where students can share study notes and tips to their fellow students",
         techStack : [

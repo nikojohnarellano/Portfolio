@@ -8,6 +8,7 @@ import {
     Segment,
     Image
 } from 'semantic-ui-react'
+import isEmpty from 'lodash/isEmpty';
 
 export default class PortfolioItem extends Component {
 
@@ -46,7 +47,8 @@ export default class PortfolioItem extends Component {
                                 { item.description }
                             </p>
                             {
-
+                                !isEmpty(item.link) &&
+                                (
                                 item.link.downloads ?
                                     (
                                         <Image.Group size='small'>
@@ -57,7 +59,7 @@ export default class PortfolioItem extends Component {
                                  :
                                     <p style={{ fontSize: '1.33em', color: "white"  }}>
                                         {item.link.title} : <a href={item.link.link}>{item.link.link}</a>
-                                    </p>
+                                    </p>)
 
                             }
                             <Header as='h5' style={{ fontSize: '1.3em', color: "white"  }}>Tech Stack: </Header>
